@@ -38,5 +38,6 @@ async def on_interaction(interaction: Interaction):
             guild = interaction.guild
             role = guild.get_role(ROLE_ID)
             await interaction.user.add_roles(role)
+            await interaction.response.send_message("인증이 완료 되었어요!", ephemeral=True)
 
 bot.run(DISCORD_BOT_TOKEN)
