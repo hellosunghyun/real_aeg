@@ -16,7 +16,7 @@ class party_view(ui.View):
         self.embeds = []
         self.embeds.append(Embed(title="진짜 반쪽이가 되시겠습니까?",
                                  description=f"아래 인증하기 버튼을 눌러 진짜 반쪽이가 되세요!", color=0x00ff00))
-        self.embeds[0].set_footer(text="인증 완료시 채널 조회가 가능합니다.")
+        self.embeds[0].set_footer(text="인증 완료시 대화가 가능합니다.")
         self.add_item(ui.Button(label="인증하기", style=ButtonStyle.green, custom_id="verify"))
 
 @bot.event
